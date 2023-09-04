@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Private chef for private events, company events, birthdays and couple meals</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Auto slideshow</title>
+ <!--Stylesheet-->
+     <link rel="stylesheet" href="style.css">
+
+ <script>
+function reloadPage() {
+  // Display a message
+  alert("Your request was sent to the chef");
+
+  // Reload the page after the alert
+  location.reload();
+}
+     let x = myFunction(4, 3);
+document.getElementById("demo").innerHTML = x;
+
+function myFunction() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("demo").innerHTML = "You selected: " + x;
+}
+
+
+</script>
+<style>
+.button-49,
+.button-49:after {
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #8d2510eb 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 4px 5px #f1f3f3;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-49:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'ALTERNATE TEXT';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #832e12 3%, #e6dfda 5%, #ffffff 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #a25122;
+  clip-path: var(--slice-0);
+}
+
+.button-49:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .button-49,
+  .button-49:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow:hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float:left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #8e3616;
+  color: white;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 10px;
+  border:#34495E;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+  cursor:context-menu ;
+ 
+}
+
+input[type=text]:focus {
+  width: 200px;
+  margin-right: 100px;
+}
+
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #883319;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 40%;
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+[type="checkbox"]:not(:checked),
+	[type="checkbox"]:checked {
+		position: absolute;
+		left: 0.2;
+		opacity: 0.01;
+	}
+	[type="checkbox"]:not(:checked) + label,
+	[type="checkbox"]:checked + label {
+		position: relative;
+		padding-left: 2.3em;
+		font-size: 1.05em;
+		line-height: 1.7;
+		cursor: pointer;
+	}
+
+	/* checkbox aspect */
+	[type="checkbox"]:not(:checked) + label:before,
+	[type="checkbox"]:checked + label:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 1.4em;
+		height: 1.4em;
+		border: 1px solid #aaa;
+		background: #FFF;
+		border-radius: .2em;
+		box-shadow: inset 0 1px 3px rgba(0,0,0, .1), 0 0 0 rgba(203, 34, 237, .2);
+		-webkit-transition: all .275s;
+				transition: all .275s;
+	}
+
+	/* checked mark aspect */
+	[type="checkbox"]:not(:checked) + label:after,
+	[type="checkbox"]:checked + label:after {
+		content: '✕';
+		position: absolute;
+		top: .525em;
+		left: .18em;
+		font-size: 1.375em;
+		color: #631f11;
+		line-height: 0;
+		-webkit-transition: all .2s;
+				transition: all .2s;
+        text-emphasis: none;
+	}
+
+	/* checked mark aspect changes */
+	[type="checkbox"]:not(:checked) + label:after {
+		opacity: 0;
+		-webkit-transform: scale(0) rotate(45deg);
+				transform: scale(0) rotate(45deg);
+	}
+
+	[type="checkbox"]:checked + label:after {
+		opacity: 1;
+		-webkit-transform: scale(1) rotate(0);
+				transform: scale(1) rotate(0);
+	}
+
+	/* Disabled checkbox */
+	[type="checkbox"]:disabled:not(:checked) + label:before,
+	[type="checkbox"]:disabled:checked + label:before {
+		box-shadow: none;
+		border-color: #bbb;
+		background-color: #e9e9e9;
+	}
+
+	[type="checkbox"]:disabled:checked + label:after {
+		color:wheat;
+	}
+
+	[type="checkbox"]:disabled + label {
+		color: #aaa;
+	}
+
+	/* Accessibility */
+	[type="checkbox"]:checked:focus + label:before,
+	[type="checkbox"]:not(:checked):focus + label:before {
+		box-shadow: inset 0 1px 3px rgba(0,0,0, .1), 0 0 0 6px rgba(203, 34, 237, .2);
+	}
+
+
+
+
+
+body {
+  font-family: "Open Sans", "Segoe WP", "Segoe UI", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #e7e6e2;
+    background: #FCFDFD;
+}
+
+a[href^="https://www.creativejuiz"] {
+  color: #d8bc74;
+  text-decoration: underline;
+}
+
+h1 {
+  margin-top: 1em;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 2em;
+  color: #eeecea;
+  font-weight: normal;
+}
+
+form {
+  width: 120px;
+  margin: 0 auto 55px;
+  text-align: left;
+}
+
+div p:first-child {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+p { 
+  color:wheat;
+}
+
+p a {
+  color: inherit;
+}
+
+p + p {
+  margin-top: 3em;
+}
+
+form p {
+  margin: 15px 0;
+  color: #34495E;
+}
+
+a[href^="https://twitter.com"] {
+  color: #5d1a0f;
+}
+
+.btn.btn {
+  display: inline-block;
+  padding: 8px 24px;
+  text-decoration: none;
+  border-radius: 40px;
+  background: #441e16;
+  color: #F2F2F2;
+  transition: all .4s;
+  text-transform: capitalize;
+}
+
+.btn.btn:hover,
+.btn.btn:focus {
+  background: wheat;
+}
+
+body{
+
+  background-image: url(1097054-kitchen-spoons-diner-cooking-ART-darkness-screenshot.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+
+}
+
+</style>
+
+</head>
+
+<body>
+  <div class="topnav">
+    <a class="active" href="#home">home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <input type="text" placeholder="Search..">
+  </div> 
+
+  <h1>Jonathanson</h1>  
+
+<br>
+
+
+    <div class="container">
+        <div class="wrapper">
+            <img src="scallop.jpg">
+            <img src="3ba0b1878c4b4288919b56ae73b29634_Bybrook.jpg">
+            <img src="634985d5bc76400e9b48c16384bef89a_L'enclume+-+Cris+Barnett.jpg">
+            <img src="seo_michelin-restaurants-that-deliver_101222.jpg">
+            <img src="hiver-gastronomie-1920x1080-sylvainaymoz-132.jpg">
+            <img src="image.jpg">
+            <img src="01g4n37sg242w38kxpt9.webp">
+            <img src="Chef-Brian-Poisson-Cru-768x1024.webp">
+            <img src="Chef-Brian-Seared-Ahi-768x1024.webp">
+            <img src="11062b_4c68ff7404e7429aa4270be3fac9c9f8~mv2_d_4500_3003_s_4_2.webp">
+            <img src="2022-06-19-18-42-07-819.jpg">
+            <img src="L'Enclume.png">
+            <img src="michelin-2000x1125.jpeg">
+
+
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+<h1>Private chefe </h1>
+
+
+
+<p><b>private chef named Yonatan worked with famous chefs ,and this 
+  <br>
+  in the world, learned all the best techniques in the modern world </b> </p>
+     <div></div>
+
+
+    <p><b>he will give you an air you never had before </b></p>
+
+    
+
+
+
+<p><b>The kind of food you want:</b></p>
+  <input type="radio" id="morning" name="morning" value="morning">
+  <label for="morning">morning party</label><br>
+  <div></div>
+  <input type="radio" id="Noon" name="Noon" value="Noon">
+  <label for="Noon">Noon party</label><br>
+  <div></div>
+  <input type="radio" id="evening" name="eveninge" value="evening">
+  <label for="evening">evening party</label><br>
+
+<h3>Jonathan will give you a pleasant atmosphere even before the meal</h3>
+
+<h3>Here you can access our link and see what we offer you</h3>
+
+
+<p>Choose the hours of the day that suit you:</p>
+<select id="mySelect" onchange="myFunction()">
+  <option value="18+">18+(one pepole)</option>
+  <option value="18+">18+(two pepoles)</option>
+  <option value="18+">18+(three pepoles)</option>
+  <option value="18+">18+(four pepoles)</option>
+  <option value="18+">18+(five pepoles)</option>
+  <option value="18+">18+(six pepoles)</option>
+  <option value="18+">18+(seven pepoles)</option>
+  <option value="18+">18+(eight pepoles)</option>
+  <option value="18+">18+(nine pepoles)</option>
+  <option value="18+">18+(ten pepoles)</option>
+  <option value="18+">18+(eleven pepoles)</option>
+  <option value="18+">18+(twelve pepoles)</option>
+</select>
+<p id="demo"></p>
+<br>
+<br>
+  <input type="checkbox" id="meat" name="meat" value="meat">
+  <label for="meat"> meat foods</label><br>
+  <input type="checkbox" id="dairy" name="dairy" value="dairy">
+  <label for="dairy"> dairy food</label><br>
+  <input type="checkbox" id="vegan" name="vegan" value="Boat">
+  <label for="vegan"> vegan food</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+<br>
+<br>
+
+<label for="guests">the number of diners:</label>
+<select  name="guests" id="guests">
+  <optgroup label="number of guests">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+  </optgroup>
+</select>
+<br>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+</form>
+
+<button class="button-49" style="vertical-align:middle" onclick="reloadPage()"><span>send it to us</span></button>
+<br>
+<br>
+
+<h4> one of the biggest chef is chef Gordon Ramsay</h4>
+<br>
+ 
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/BHcyuzXRqLs?si=sWHiLZiz52Isd91G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+<h2>you can find us on</h2>
+<br>
+<p><a href="https://www.tiktok.com/">tiktok</a></p>
+<p><a href="https://www.youtube.com/">youtube</a></p>
+
+<br>
+
+<h3
+ >or you can find us on </h3>
+<p><a href="https://www.google.com/">google</a></p>
+<p><a href="https://he-il.facebook.com/">facebook</a></p>
+<p><a href="https://www.instagram.com/">instagram</a></p>
+
+
+</body>
+</html>
